@@ -1,7 +1,14 @@
 package binary_search;
 
+import java.util.logging.Logger;
+
+import static java.util.logging.Level.INFO;
+
 public class Main {
+
     public static void main(String[] args) {
+        Logger logger = Logger.getLogger(Main.class.getName());
+
         BinarySearch binarySearch = new BinarySearch();
 
         int[] arr = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24};
@@ -9,6 +16,6 @@ public class Main {
 
         int result = binarySearch.search(arr, num);
 
-        System.out.println("Target found at index: " + result);
+        logger.log(INFO, "Target found at index: {0}", result);
     }
 }

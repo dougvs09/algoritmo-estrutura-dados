@@ -1,4 +1,4 @@
-package reverse_word_3_leet_code;
+package reverse_word_leet_code;
 
 import java.util.Objects;
 
