@@ -3,12 +3,23 @@ package sorting;
 public class Sort {
 
     private final int[] arr;
+    private final Node head;
 
     Sort(int[] arr) {
+        this.head = null;
         this.arr = arr;
     }
 
+    Sort(Node head) {
+        this.head = head;
+        this.arr = null;
+    }
+
     public int[] bubbleSort() {
+        if (this.arr == null) {
+            throw new IllegalArgumentException("For access this method, the parameter 'arr' is required");
+        }
+
         for (int i = 0; i < this.arr.length; i++) {
             boolean isSorted = true;
 
@@ -31,10 +42,18 @@ public class Sort {
     }
 
     public int[] quickSort() {
+        if (this.arr == null) {
+            throw new IllegalArgumentException("For access this method, the parameter 'arr' is required");
+        }
+
         return quickSort(0, this.arr.length - 1);
     }
 
-    public Node mergeSort(Node head) {
+    public Node mergeSort() {
+        return mergeSort(this.head);
+    }
+
+    private Node mergeSort(Node head) {
         if (head ==  null || head.next == null) {
             return head;
         }
