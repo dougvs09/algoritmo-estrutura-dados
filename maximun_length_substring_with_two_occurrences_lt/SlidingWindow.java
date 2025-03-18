@@ -1,4 +1,4 @@
-package maximun_length_substring_with_two_occurrences;
+package maximun_length_substring_with_two_occurrences_lt;
 
 import java.util.HashMap;
 

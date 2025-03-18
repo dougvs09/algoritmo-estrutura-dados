@@ -1,10 +1,10 @@
-package first_unique_char;
+package first_unique_char_lt;
 
 import java.util.HashMap;
 
 public class FirstUniqueChar {
 
-    public int firstUniqChar(String s) {
+    public int solution(String s) {
         int l = 0;
         int r = 0;
         char[] arr = s.toCharArray();

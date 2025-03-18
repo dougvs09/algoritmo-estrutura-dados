@@ -1,8 +1,8 @@
-package two_sum;
+package two_sum_lt;
 
 public class TwoSum {
 
-    public int[] twoSum(int[] nums, int target) {
+    public int[] solution(int[] nums, int target) {
         int l = 0;
         int r = 1;
 

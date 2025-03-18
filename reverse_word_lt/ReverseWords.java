@@ -1,10 +1,10 @@
-package reverse_word_leet_code;
+package reverse_word_lt;
 
 import java.util.Objects;
 
 class ReverseWords {
 
-    public String reverseWords(String s) {
+    public String solution(String s) {
         String[] arr = s.split("");
         int l = 0;
         int r = 0;
