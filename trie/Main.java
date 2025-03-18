@@ -11,6 +11,6 @@ public class Main {
 
         boolean found = trie.search("douglas");
 
-        System.out.printf("Word found? %s", found);
+        System.out.printf("Word found? %b", found);
     }
 }

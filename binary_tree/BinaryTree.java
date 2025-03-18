@@ -23,7 +23,13 @@ public class BinaryTree {
     }
 
     private TreeNode insert(TreeNode currentNode, TreeNode newNode) {
-        if (newNode.getValue() > currentNode.getValue()) {
+        if (newNode.getValue() < currentNode.getValue()) {
+            if (currentNode.getLeft() == null) {
+                currentNode.setLeft(newNode);
+            } else {
+                this.insert(currentNode.getLeft(), newNode);
+            }
+        } else {
             if (currentNode.getRight() == null) {
                 currentNode.setRight(newNode);
             } else {
@@ -31,15 +37,25 @@ public class BinaryTree {
             }
         }
 
-        if (newNode.getValue() < currentNode.getValue()) {
-            if (currentNode.getLeft() == null) {
-                currentNode.setLeft(newNode);
-            } else {
-                this.insert(currentNode.getLeft(), newNode);
-            }
+        return newNode;
+    }
+
+    public boolean search(int value) {
+        return this.search(value, this.root);
+    }
+
+    private boolean search(int value, TreeNode node) {
+        if (node == null) {
+            return false;
         }
 
-        return newNode;
+        if (value == node.getValue()) {
+            return true;
+        } else if(value < node.getValue()) {
+            return this.search(value, node.getLeft());
+        } else {
+            return this.search(value, node.getRight());
+        }
     }
 
     public TreeNode getRoot() {

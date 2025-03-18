@@ -9,6 +9,6 @@ public class Main {
 
         int result = exponentialSearch.search(arr, num);
 
-        System.out.printf("Target found at index: %s", result);
+        System.out.printf("Target found at index: %d", result);
     }
 }

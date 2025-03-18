@@ -8,6 +8,6 @@ public class Main {
 
         int oneBitsNumber = numberOfOneBits.solution(number);
 
-        System.out.printf("Number of 1 bits in number %s: %d", number, oneBitsNumber);
+        System.out.printf("Number of 1 bits in number %d: %d", number, oneBitsNumber);
     }
 }

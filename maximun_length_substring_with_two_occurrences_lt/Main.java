@@ -9,6 +9,6 @@ public class Main {
 
         int result = slidingWindow.maximumLengthSubstring(word);
 
-        System.out.printf("Target found at index: %s", result);
+        System.out.printf("Target found at index: %d", result);
     }
 }

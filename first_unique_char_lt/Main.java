@@ -9,6 +9,6 @@ public class Main {
 
         int result = solution.solution(word);
 
-        System.out.printf("Character found at index: %s", result);
+        System.out.printf("Character found at index: %d", result);
     }
 }

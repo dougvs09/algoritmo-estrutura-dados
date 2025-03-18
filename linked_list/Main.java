@@ -6,22 +6,22 @@ public class Main {
 
         doublyLinkedList.addToInit(1);
         doublyLinkedList.addToEnd(32);
-        System.out.printf("First head: %s", doublyLinkedList.getHead().getValue());
-        System.out.printf("First head: %s", doublyLinkedList.getHead().getValue());
-        System.out.printf("First tail: %s", doublyLinkedList.getTail().getValue());
-        System.out.printf("Tail previous: %s", doublyLinkedList.getTail().getPrevious().getValue());
-        System.out.printf("Head next: %s", doublyLinkedList.getHead().getNext().getValue());
+        System.out.printf("First head: %d", doublyLinkedList.getHead().getValue());
+        System.out.printf("First head: %d", doublyLinkedList.getHead().getValue());
+        System.out.printf("First tail: %d", doublyLinkedList.getTail().getValue());
+        System.out.printf("Tail previous: %d", doublyLinkedList.getTail().getPrevious().getValue());
+        System.out.printf("Head next: %d", doublyLinkedList.getHead().getNext().getValue());
 
         doublyLinkedList.addToInit(91);
-        System.out.printf("New head: %s", doublyLinkedList.getHead().getValue());
-        System.out.printf("New next head: %s", doublyLinkedList.getHead().getNext().getValue());
-        System.out.printf("New previous of new head next: %s", doublyLinkedList.getHead().getNext().getPrevious().getValue());
-        System.out.printf("Tail previous: %s", doublyLinkedList.getTail().getPrevious().getValue());
+        System.out.printf("New head: %d", doublyLinkedList.getHead().getValue());
+        System.out.printf("New next head: %d", doublyLinkedList.getHead().getNext().getValue());
+        System.out.printf("New previous of new head next: %d", doublyLinkedList.getHead().getNext().getPrevious().getValue());
+        System.out.printf("Tail previous: %d", doublyLinkedList.getTail().getPrevious().getValue());
 
         doublyLinkedList.removeFromEnd();
-        System.out.printf("New tail: %s", doublyLinkedList.getTail().getValue());
+        System.out.printf("New tail: %d", doublyLinkedList.getTail().getValue());
 
         doublyLinkedList.addToEnd(4334);
-        System.out.printf("New tail: %s", doublyLinkedList.getTail().getValue());
+        System.out.printf("New tail: %d", doublyLinkedList.getTail().getValue());
     }
 }

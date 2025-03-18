@@ -13,7 +13,10 @@ public class Main {
         binaryTree.insert(11);
 
         TreeNode root = binaryTree.getRoot();
+        int number = 11;
+        boolean hasInBinaryTree = binaryTree.search(number);
 
         System.out.println(root);
+        System.out.printf("The number %d has in binary tree? %b", number, hasInBinaryTree);
     }
 }
